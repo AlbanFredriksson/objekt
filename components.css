@@ -1,0 +1,268 @@
+/* =============================================================
+   COMPONENTS — Nytt designsystem
+   Baserat på design-tokens.css — importera den först.
+   Genererat från Figma: nS8Y4KUMcrti2dMGBHIJB2
+   ============================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+/* -----------------------------------------------------------
+   RESET & BASE
+   ----------------------------------------------------------- */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  color: var(--text-body);
+  background-color: var(--surface-greyscale-default);
+  line-height: var(--line-height-caption);
+  margin: 0;
+}
+
+
+/* -----------------------------------------------------------
+   TYPOGRAFI
+   ----------------------------------------------------------- */
+
+.text-h5 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-h5);
+  letter-spacing: var(--letter-spacing-h5);
+  color: var(--text-title);
+  margin: 0;
+}
+
+.text-h6 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-h6);
+  letter-spacing: var(--letter-spacing-h6);
+  color: var(--text-title);
+  margin: 0;
+}
+
+.text-body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-caption);
+  color: var(--text-body);
+}
+
+.text-caption {
+  font-family: var(--font-family);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-caption);
+  color: var(--text-caption);
+}
+
+.text-label {
+  font-family: var(--font-family);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-label);
+  letter-spacing: var(--letter-spacing-label);
+}
+
+
+/* -----------------------------------------------------------
+   KNAPPAR
+   Varianter: .btn--primary | .btn--secondary
+   Storlekar:  .btn--sm | .btn--md (default) | .btn--lg
+   Pill:       .btn--pill
+   ----------------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  /* Default: Medium */
+  font-size: var(--font-size-h6);
+  line-height: 1;
+  padding: 0 var(--space-24);
+  height: 44px;
+  border-radius: var(--radius-xs);
+}
+
+/* Storlekar */
+.btn--sm {
+  font-size: var(--font-size-label);
+  padding: 0 var(--space-16);
+  height: 40px;
+}
+
+.btn--lg {
+  font-size: var(--font-size-h6);
+  padding: 0 var(--space-32);
+  height: 50px;
+}
+
+/* Pill */
+.btn--pill         { border-radius: var(--radius-pill); }
+
+/* Primary */
+.btn--primary {
+  background-color: var(--surface-default);
+  color: var(--text-negative);
+}
+.btn--primary:hover {
+  background-color: var(--surface-darker);
+}
+.btn--primary:disabled,
+.btn--primary[aria-disabled="true"] {
+  background-color: var(--surface-greyscale-disabled);
+  cursor: not-allowed;
+}
+
+/* Secondary */
+.btn--secondary {
+  background-color: transparent;
+  color: var(--surface-default);
+  border: 2px solid var(--border-default);
+}
+.btn--secondary:hover {
+  background-color: var(--surface-subtle);
+}
+.btn--secondary:disabled,
+.btn--secondary[aria-disabled="true"] {
+  color: var(--text-disabled);
+  border-color: var(--border-greyscale-disabled);
+  cursor: not-allowed;
+}
+
+/* CTA / Orange-knapp (Secondary-färg) */
+.btn--cta {
+  background-color: var(--surface-secondary-default);
+  color: #ffffff;
+}
+.btn--cta:hover {
+  background-color: var(--surface-secondary-darker);
+}
+
+
+/* -----------------------------------------------------------
+   BADGE
+   Varianter: .badge--default | .badge--primary | .badge--success |
+              .badge--warning | .badge--error | .badge--white
+   Stilar:    .badge--filled (default) | .badge--subtle
+   Storlekar: .badge--sm (default) | .badge--lg
+   ----------------------------------------------------------- */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+
+  /* Default: Small, Filled */
+  font-size: var(--font-size-label);
+  line-height: 1;
+  padding: 0 var(--space-8);
+  height: 24px;
+  border-radius: var(--radius-xxs);
+}
+
+/* Storlek Large */
+.badge--lg {
+  font-size: var(--font-size-caption);
+  padding: 0 var(--space-12);
+  height: 34px;
+  border-radius: var(--radius-xs);
+}
+
+/* --- FILLED (default) --- */
+
+.badge--default {
+  background-color: var(--color-gray-900);
+  color: var(--text-negative);
+}
+.badge--primary {
+  background-color: var(--surface-default);
+  color: var(--text-negative);
+}
+.badge--success {
+  background-color: var(--surface-success-default);
+  color: var(--text-negative);
+}
+.badge--warning {
+  background-color: var(--surface-warning-default);
+  color: var(--color-gray-900);
+}
+.badge--error {
+  background-color: var(--surface-error-default);
+  color: var(--text-negative);
+}
+.badge--white {
+  background-color: var(--text-negative);
+  color: var(--color-gray-900);
+}
+
+/* --- SUBTLE --- */
+
+.badge--subtle.badge--default {
+  background-color: var(--color-gray-100);
+  color: var(--text-title);
+}
+.badge--subtle.badge--primary {
+  background-color: var(--surface-subtle);
+  color: var(--text-label-primary);
+}
+.badge--subtle.badge--success {
+  background-color: var(--surface-success-subtle);
+  color: var(--text-label-success);
+}
+.badge--subtle.badge--warning {
+  background-color: var(--surface-warning-subtle);
+  color: var(--text-label-warning);
+}
+.badge--subtle.badge--error {
+  background-color: var(--surface-error-subtle);
+  color: var(--text-label-error);
+}
+
+
+/* -----------------------------------------------------------
+   RESPONSIVE SPACING ADJUSTMENTS
+   ----------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  :root {
+    --space-16: 8px;
+    --space-24: 16px;
+    --space-32: 24px;
+    --space-40: 32px;
+    --space-48: 40px;
+    --space-56: 48px;
+    --space-64: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-32: 16px;
+    --space-40: 24px;
+    --space-48: 32px;
+    --space-56: 40px;
+    --space-64: 48px;
+  }
+}

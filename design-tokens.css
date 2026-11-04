@@ -1,0 +1,265 @@
+/* =============================================================
+   DESIGN TOKENS — Nytt designsystem
+   Genererat från Figma: nS8Y4KUMcrti2dMGBHIJB2
+   Uppdatera via Figma MCP, redigera inte manuellt.
+   ============================================================= */
+
+:root {
+
+  /* -----------------------------------------------------------
+     FÄRGPALETT — Primitives
+     ----------------------------------------------------------- */
+
+  /* Primary (blå) */
+  --color-primary-50:  #f5faff;
+  --color-primary-100: #cfe9ff;
+  --color-primary-200: #89bff1;
+  --color-primary-300: #3d84d4;
+  --color-primary-400: #0d5bae;
+  --color-primary-500: #0a4d91;
+  --color-primary-600: #0a4a8c;
+  --color-primary-700: #093e78;
+  --color-primary-800: #072b54;
+  --color-primary-900: #04182d;
+
+  /* Secondary (orange) */
+  --color-secondary-50:  #fff7f5;
+  --color-secondary-100: #ffe7e1;
+  --color-secondary-200: #ffd1c2;
+  --color-secondary-300: #ff9a73;
+  --color-secondary-400: #ff7f50;
+  --color-secondary-500: #ff5e00;
+  --color-secondary-600: #cc4000;
+  --color-secondary-700: #993000;
+  --color-secondary-800: #661c02;
+  --color-secondary-900: #2e0f04;
+
+  /* Accent (mint/turkos) */
+  --color-accent-50:  #f5fffd;
+  --color-accent-100: #e0fcf5;
+  --color-accent-200: #c7f9ec;
+  --color-accent-300: #a9f5e2;
+  --color-accent-400: #8ff2da;
+  --color-accent-500: #70edd1;
+  --color-accent-600: #3bbca6;
+  --color-accent-700: #1c8b78;
+  --color-accent-800: #0f5c4f;
+  --color-accent-900: #042d25;
+
+  /* Gray */
+  --color-gray-50:  #fcfcfc;
+  --color-gray-100: #f5f5f5;
+  --color-gray-150: #f1f1f1;
+  --color-gray-200: #ededed;
+  --color-gray-300: #d6d6d6;
+  --color-gray-400: #b0b0b0;
+  --color-gray-500: #969696;
+  --color-gray-550: #747474;
+  --color-gray-600: #646464;
+  --color-gray-700: #4b4b4b;
+  --color-gray-800: #323232;
+  --color-gray-900: #1a1a1a;
+
+  /* Success (grön) */
+  --color-success-50:  #c1efd2;
+  --color-success-100: #afeac5;
+  --color-success-200: #8ce1ab;
+  --color-success-300: #69d892;
+  --color-success-400: #45ce78;
+  --color-success-500: #22c55e;
+  --color-success-600: #1da54f;
+  --color-success-700: #178640;
+  --color-success-800: #126631;
+  --color-success-900: #0c4722;
+
+  /* Warning (gul/amber) */
+  --color-warning-50:  #fce4bb;
+  --color-warning-100: #fbdca7;
+  --color-warning-200: #facd80;
+  --color-warning-300: #f8bd59;
+  --color-warning-400: #f7ae32;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #ce8509;
+  --color-warning-700: #a76b07;
+  --color-warning-800: #7f5206;
+  --color-warning-900: #583904;
+
+  /* Error (röd) */
+  --color-error-50:  #ffdddd;
+  --color-error-100: #f9bcbc;
+  --color-error-200: #f79e9e;
+  --color-error-300: #f48080;
+  --color-error-400: #f26262;
+  --color-error-500: #ef4444;
+  --color-error-600: #c93939;
+  --color-error-700: #a32e2e;
+  --color-error-800: #7c2323;
+  --color-error-900: #561818;
+
+
+  /* -----------------------------------------------------------
+     SEMANTISKA FÄRGER — Surface (bakgrunder)
+     ----------------------------------------------------------- */
+
+  /* Primary surfaces */
+  --surface-subtle:   #f5faff;
+  --surface-lighter:  #3d84d4;
+  --surface-default:  #093e78;
+  --surface-darker:   #072b54;
+
+  /* Secondary surfaces */
+  --surface-secondary-subtle:  #fff7f5;
+  --surface-secondary-lighter: #ff9a73;
+  --surface-secondary-default: #ff5e00;
+  --surface-secondary-darker:  #993000;
+
+  /* Accent surfaces */
+  --surface-accent-subtle:  #f5fffd;
+  --surface-accent-lighter: #a9f5e2;
+  --surface-accent-default: #70edd1;
+  --surface-accent-darker:  #1c8b78;
+
+  /* Greyscale surfaces */
+  --surface-greyscale-default:  #fcfcfc;
+  --surface-greyscale-darker:   #f5f5f5;
+  --surface-greyscale-disabled: #b0b0b0;
+
+  /* Status surfaces */
+  --surface-success-subtle:  #c1efd2;
+  --surface-success-lighter: #69d892;
+  --surface-success-default: #22c55e;
+  --surface-success-darker:  #178640;
+
+  --surface-warning-subtle:  #fce4bb;
+  --surface-warning-lighter: #f8bd59;
+  --surface-warning-default: #f59e0b;
+  --surface-warning-darker:  #a76b07;
+
+  --surface-error-subtle:  #ffdddd;
+  --surface-error-lighter: #f48080;
+  --surface-error-default: #ef4444;
+  --surface-error-darker:  #a32e2e;
+
+
+  /* -----------------------------------------------------------
+     SEMANTISKA FÄRGER — Border (ramar)
+     ----------------------------------------------------------- */
+
+  --border-subtle:  #cfe9ff;
+  --border-lighter: #3d84d4;
+  --border-default: #093e78;
+  --border-darker:  #072b54;
+
+  --border-secondary-subtle:  #ffe7e1;
+  --border-secondary-lighter: #ff9a73;
+  --border-secondary-default: #ff5e00;
+  --border-secondary-darker:  #993000;
+
+  --border-accent-subtle:  #e0fcf5;
+  --border-accent-lighter: #a9f5e2;
+  --border-accent-default: #70edd1;
+  --border-accent-darker:  #1c8b78;
+
+  --border-greyscale-default:  #ededed;
+  --border-greyscale-disabled: #f5f5f5;
+  --border-greyscale-lighter:  #f1f1f1;
+  --border-greyscale-darker:   #d6d6d6;
+
+  --border-success-subtle:  #afeac5;
+  --border-success-lighter: #69d892;
+  --border-success-default: #22c55e;
+  --border-success-darker:  #178640;
+
+  --border-warning-subtle:  #fbdca7;
+  --border-warning-lighter: #f8bd59;
+  --border-warning-default: #f59e0b;
+  --border-warning-darker:  #a76b07;
+
+  --border-error-subtle:  #f9bcbc;
+  --border-error-lighter: #f48080;
+  --border-error-default: #ef4444;
+  --border-error-darker:  #a32e2e;
+
+
+  /* -----------------------------------------------------------
+     SEMANTISKA FÄRGER — Text
+     ----------------------------------------------------------- */
+
+  --text-title:    #1a1a1a;
+  --text-body:     #323232;
+  --text-subtitle: #4b4b4b;
+  --text-caption:  #747474;
+  --text-negative: #fcfcfc;
+  --text-disabled: #b0b0b0;
+
+  --text-label-primary:   #093e78;
+  --text-label-secondary: #ff5e00;
+  --text-label-accent:    #70edd1;
+  --text-label-success:   #178640;
+  --text-label-warning:   #a76b07;
+  --text-label-error:     #a32e2e;
+
+
+  /* -----------------------------------------------------------
+     TYPOGRAFI
+     Typsnitt: Poppins (importeras separat)
+     ----------------------------------------------------------- */
+
+  --font-family: "Poppins", system-ui, sans-serif;
+
+  /* Storlekar */
+  --font-size-h5:      20px;
+  --font-size-h6:      16px;
+  --font-size-caption: 14px;
+  --font-size-label:   12px;
+
+  /* Vikter */
+  --font-weight-regular: 400;
+  --font-weight-medium:  500;
+
+  /* Radhöjd */
+  --line-height-h5:      1.5;
+  --line-height-h6:      1.6;
+  --line-height-caption: 1.4;
+  --line-height-label:   1.2;
+
+  /* Letter-spacing */
+  --letter-spacing-h5:    -0.4px;
+  --letter-spacing-h6:    0px;
+  --letter-spacing-label: 0.1px;
+
+
+  /* -----------------------------------------------------------
+     SPACING — Responsiv skala
+     Desktop → Tablet (≤1024px) → Mobil (≤768px)
+     ----------------------------------------------------------- */
+
+  --space-4:  4px;   /* fast på alla breakpoints */
+  --space-8:  8px;   /* fast på alla breakpoints */
+  --space-12: 12px;  /* fast på alla breakpoints */
+  --space-16: 16px;  /* tablet/mobil: 8px */
+  --space-24: 24px;  /* tablet/mobil: 16px */
+  --space-32: 32px;  /* tablet: 24px, mobil: 16px */
+  --space-40: 40px;  /* tablet: 32px, mobil: 24px */
+  --space-48: 48px;  /* tablet: 40px, mobil: 32px */
+  --space-56: 56px;  /* tablet: 48px, mobil: 40px */
+  --space-64: 64px;  /* tablet: 56px, mobil: 48px */
+
+  /* Användning:
+     TIGHT (komponent-internals):     --space-4, 8, 12
+     COMFORTABLE (element-spacing):   --space-16, 24, 32
+     SPACIOUS (sektion-rhythm):       --space-40, 48, 56, 64  */
+
+
+  /* -----------------------------------------------------------
+     RADIUS — Hörnradier
+     ----------------------------------------------------------- */
+
+  --radius-xxs: 2px;   /* Chips & Badges */
+  --radius-xs:  4px;   /* Mellanstora och mindre knappar */
+  --radius-s:   8px;   /* Kort, inputs och dialoger */
+  --radius-m:   16px;  /* Mellanstora sektioner och foton */
+  --radius-l:   24px;  /* Större sektioner och foton */
+  --radius-pill: 9999px; /* Pill-knappar och rundade badges */
+
+}
